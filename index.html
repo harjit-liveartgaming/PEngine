@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PEngine Demo</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #000; overflow: hidden; cursor: crosshair; }
+    canvas { display: block; }
+    #info {
+      position: fixed;
+      top: 14px;
+      left: 18px;
+      color: rgba(255, 255, 255, 0.45);
+      font: 12px/1.8 monospace;
+      pointer-events: none;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div id="info">
+    PEngine · WebGL point sprites<br>
+    Click anywhere to burst<br>
+    <span id="count">0</span> particles active
+  </div>
+  <script type="module" src="/demo/main.ts"></script>
+</body>
+</html>
